@@ -7,7 +7,9 @@ function ScoreBoard({ points, gameOver, resetGame }) {
             {gameOver && (
                 <div className="game-over-overlay">
                     {gameOver === "lost" ? (
-                        <h2>Game Over! You clicked a box more than once.</h2>
+                        <h2>
+                            Game Over! You clicked a character more than once.
+                        </h2>
                     ) : (
                         <h2>You won! Great job!</h2>
                     )}
